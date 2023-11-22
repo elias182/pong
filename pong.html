@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego de Pong</title>
+  <style>
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        align-content: center;
+        background-color: black;
+        color: white;
+    }
+
+    #marca{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+    svg {
+      background-color: black;
+      border: solid 2px white;
+    }
+  </style>
+  <script src="pongjs.js"></script>
+</head>
+<body>
+<h1>PONG</h1>
+<div id="marca">
+    <h2>Player 1</h2>
+    <h2>Player 2</h2>
+    <p id="pun1">0</p>
+    <p id="pun2">0</p>
+
+
+</div>
+
+<svg id="pong" width="800" height="400"></svg>
+
+</body>
+</html>
